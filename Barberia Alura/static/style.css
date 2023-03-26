@@ -1,0 +1,57 @@
+.tituloPrinc{
+    padding-left:30px;
+}
+/* *Para referenciar un ID en CSS utilizamos una almohadilla (#). Solo se aplicara el estilo al elemento con ese ID*/
+#banner{
+    width: 100%
+}
+
+.principal{
+    background: #cccccc;
+    /* *Indicamos que el espaciamiento interno de los elementos sea de 20 px. No se ve tan comprimido*/
+    padding: 20px;
+}
+
+.tituloCen{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+em strong{
+    color: red;
+}
+#mision{
+    font-size: 20px;
+}
+
+
+.diferenciales{
+    background: #FFFFFF;
+     /* *Indicamos que el espaciamiento interno de los elementos sea de 20 px. No se ve tan comprimido*/
+    padding: 30px;
+}
+
+/* *Para referenciar una clase en CSS utilizamos un punto (.). Una clase me permite reutilizar estilos*/
+.items{
+    font-style: italic;
+}
+
+/* *Para modificar las propiedades de mi etiqueta unorden list y la imagen quede a la derecha*/
+ul{
+    /* *Indicamos que los elementos de nuestra lista solo ocupen el espacio que les corresponde y no toda la pantalla*/
+    display: inline-block;
+    /* *Indicamos que nuestra unorden list este en la parte superior */
+    vertical-align:top;
+    /* *Estamos indicando que ocupe el 20% de la anchura total de la pantalla */
+    width:20%;
+    /* *Indicamos que tenga un margen hacia la dereche del 15% total de la anchura de la pantalla */
+    margin-right: 15%;
+
+}
+
+.imgDiferenciales{
+    width: 50%;
+}

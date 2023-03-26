@@ -1,0 +1,120 @@
+header{
+    background-color:#BBBBBB;
+    /* *Propiedad de espaciamiento externo. Indicamos 20px en sup-inf y 0 para los laterales*/
+    padding: 20px 0;
+}
+
+.caja{
+    /* *Delimitamos que la etiqueta caja ocupe un ncho de 940px, ya que es el tamaño mas comun de dispositivos */
+    width:940px;
+    /* *Indicamos que los elementos de nuestra caja tengan una posision relativam con  */
+    position: relative;
+    /* *Indicamos que tengan un margen sup-inf de cero, y automatico a los vordes*/
+    margin: 0 auto;
+}
+
+nav{
+    /* *Indicamos que el elemento nav ocupe todo el ancho de la pantalla */
+    position: absolute;
+    /* *Indicamos que  se desplace hacia arriba 110 pixeles*/
+    top:110px;
+    /* *Indicamos que  se desplace hacia la izquierda 0 pixeles*/
+    right:0;
+}
+nav li{
+    /* *Indicamos a los alementos de nuestra barra de navegacion que el espacio lo ocuoen en una sola linea */
+    display: inline;
+    margin:0 0 0 15px
+}
+nav a{
+    /* *Indicamos que el texto de nuestros enlaces este en mayusculas */
+    text-transform:uppercase;
+    /* *Indicamos que el texto de nuestros enlaces esten en negro */
+    color: #000000;
+    /* *Indicamos que el texto de nuestros enlaces este en negrita */
+    font-weight: bold;
+    /* *Indicamos que el texto de nuestros enlaces tenga un tamaño de 22px */
+    font-size: 22px;
+    /* *Indicamos que el texto de nuestros enlaces no tega la decoracion predeterminada */
+    text-decoration: none;
+}
+
+                                /* TODO: SOBRE LOS EVENTOS CON CSS*/
+/**La propiedad over es la que esa capturando el movimiento del mause. Cuando se encuentre en nuestros elementos (a) se produzca un evento*/
+nav a:hover{
+    color: #c78c19;
+    text-decoration:underline;
+}
+
+
+.productos{
+    /* *Indicamos que toda nuestra lista de productos se distribuya en 940px en total */
+    width:940px; /* !Este numero es importante */
+    /* *Indicamos que los laterales los distribuya de forma automatica (para adaptarse a cualquier dispositivo) */
+    margin:0 auto;
+    /* *Indicamos que el espacion interno de nuestra lista de productos sea de 50px */
+    padding: 50px;
+}
+
+
+.productos li{
+    /* *Indicamos que los elementos de nuestra lista de productos se distribuyan en una sola linea */
+    display: inline-block;
+    text-align: center;
+    /* *Indicamos que los elementos de nuestra lista de productos ocupe el 30% del espacion  */
+    width:30%; /* !Ya que son 3 elementos estamos ocupando el 90% de espacio total (940px) que le asigmanos a la lista */
+    /* *Indicamos que la alineacion de los items sea de forma vertical (top) */
+    vertical-align: top;
+    /**Colocamos un margen externo a nuestros elementos de 0 para vertical y 1.5% en los laterales*/
+    margin:0 1.5%;
+    /**Agregamos un espaciamiento interno de 30px vertical y 20px horizonal*/
+    padding:30px 20px; /* !Con los 20px estamos sobre pasando el espacio total que le asignamos a nuestra lista*/
+    /**Para evitar un desboramiento definimos que el borde maximo de cada uno de los elementos de la lista*/
+    /**sera el limite ya definido (with:30%) y se ajustara a este parametro */
+    box-sizing: border-box;
+                                    /* TODO: SOBRE LOS BORDES DE LOS ELEMENTOS*/
+    /**Definimos un borde para ca uno de los elementos de mi lista*/
+    border: 2px solid #000000;
+    border-radius: 15px;
+
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+.productos li:active{
+    border-color: #088c19;
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/**Cuando nos posicionemos dentro de cualquier elemento de nuestra lista, ve hasta la etiqueta h2 y aplica lo siguiente*/
+.productos li:hover h2{
+    font-size:40px;
+}
+
+.prod-descripcion{
+    font-size: 18px;
+}
+.prod-precio{
+    font-size:20px;
+    font-weight:bold;
+    /* *De esta forma separamos 10px el precio de uestra descripcion*/
+    margin-top:10px;
+}
+
+footer{
+    text-align: center;
+    background: url(img/bg.jpg);
+    padding: 40px;
+}
+
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin:20px;
+}
