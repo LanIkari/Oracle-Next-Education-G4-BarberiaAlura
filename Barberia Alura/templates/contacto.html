@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UFT-8">
+        <title>Contacto-Barberia Alura</title>
+        <!-- *La hoja de estilos (reset) quita el formato po defecto que le aplican los anavegadores a las paginas web-->
+        <link rel="stylesheet" href="../static/reset.css" >
+        <link rel="stylesheet" href="../static/styleContacto.css">
+
+    </head>
+
+    <body>
+        <header>
+            <!-- *Metemos los elementos de nuestro baner en un div para que se les apliquen las mismas propiedades -->
+            <div class="caja">
+                <h1><img src="../static/img/logo.png" alt="Logo Barberia Alura"></h1>
+                <!-- *La etiqueta nav sirve para crear un menu de navegacion-->
+                <nav>
+                    <ul>
+                        <!-- *La etiqueta a sirve para crear un enlace a otra pagina web-->
+                        <li> <a href="index.html"> Home</a> </li>
+                        <li> <a href="productos.html"> Productos</a> </li>
+                        <li> <a href="contacto.html"> contacto</a> </li>
+                    </ul>
+                </nav>  
+            </div>
+        </header>
+        
+        <main>
+                                <!--TODO IMPLEMENTACION DE FORMULARIO -->   
+            <!-- *La etiqueta form indicara la creacion de un formulario-->
+            <form>
+                                <!-- TODO CAMPOS DE TEXTO-->
+                <!-- *La etiqueta label indica el nombre del campo-->
+                <label for="nombreApellido">Nombre y Apellidos</label>
+                <!-- *La etiqueta input indica lacreacion de un campo de texto. Le asiganmos un id para relacionarla a la etiqueta label-->
+                <!-- *Le agregamos una clase para tener mayor control y versarilidad en os estilos-->
+                                <!--TODO: Validando datos desde el FrontEnd-->
+                <!-- * Por ultimo agregamos la caracteristica (required) que nos idica que dicho campo es forsozo.-->
+                <input type="text" id="nombreApellido" class="input-box" required>
+ 
+                <!-- *CAMPO CORREO-->
+                <label for="correo">Correo Electronico</label>
+                <!-- *Le agregamos la caracteristica (placeholder) que ayuda a guiar a nuestro usuario, poniendo un ejemplo de dato valido-->  
+                <input type="email" id="correo" class="input-box" required placeholder="email@dominio.com">
+                <!-- *CAMPO TELEFONO-->
+                <label for="telefono">Numero de Telefono</label>
+                <input tyope="tel" id="telefono" class="input-box" required placeholder="(XX) XXXX XXXX">
+
+                <label for="txtArea">Mensaje o Comentarios</label> 
+                <textarea cols="70" rows="10" id="txtArea" class="input-box"></textarea>
+                
+                                <!-- TODO: BOTONES CIRCULARES OPCION MULTIPLE-->
+                <!-- *La etiqueta fieldset nos permite indicarle al navegador que el conjunto de datos dentro hacen referencia a la misma cosa u informacion-->
+                <fieldset> 
+                    <!-- *La etiqueta legend nos permite darle un titulo al fieldset-->
+                    <legend>Como te gustaria que te contactemos?</legend>
+                    <!-- *Lista de Radio Button-->
+                    <label for"radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    
+                    <label for"radio-tel"><input type="radio" name="contacto" value="Telefono" id="radio-tel">Telefono</label>
+                    <!-- *El atributo (checked) nos permite dejar seleccionado un boton por defecto-->
+                    <label for"radio-WA"><input type="radio" name="contacto" value="WhatsApp" id="radio-WA" checked>WhatsApp</label>
+                    
+                </fieldset>
+                                <!-- TODO: CAJA DE SELECCION-->
+                <fieldset>
+                    <legend>En que horario prefieres ser atendido?</legend>
+                    <select>
+                        <option>Mañana </option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                </fieldset>
+                                <!-- TODO: CASILLA DE VERIFICACION -->
+                <label><input type="checkbox" class="checkbox" checked>Le gustaria recibir novedades de la Barberia Alura?</label>
+                <!-- *Boton para enviar formulario. Sera de tipo (submit) HTML lo interpreta por si mismo-->
+                <input type="submit" value="Enviar formulario" class="enviar" >
+
+            </form>
+
+                                <!--TODO IMPLEMENTACION DE FORMULARIO -->
+            <!-- *La etiqueta table indica la creacion de una tabla-->
+            <table>
+                <!-- *La etiqueta thead indica la creacion de una cabecera de tabla-->
+                <thead>
+                    <!-- *La etiqueta tr indica la creacion de una fila-->
+                    <tr>
+                        <!-- *La etiqueta th indica la creacion de una celda de cabecera-->
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <!-- *La etiqueta tbody indica la creacion de un cuerpo de tabla-->
+                <tbody>
+                    <tr>
+                        <!-- *La etiqueta td indica la creacion de una celda de datos-->
+                        <td>Lunes</td>
+                        <td>10:00 a.m - 8:00 p.m</td>
+                    </tr>
+    
+                    <tr>
+                        <td>Martes</td>
+                        <td>10:00 a.m - 8:00 p.m</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>10:00 a.m - 8:00 p.m</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>10:00 a.m - 8:00 p.m</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>10:00 a.m - 8:00 p.m</td>
+                    </tr>
+                    <tr>
+                        <td>Sabado</td>
+                        <td>1:00 p.m - 8:00 p.m</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>1:00 p.m - 8:00 p.m</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <!-- *Footer es la etiqueta especial para el pie de pagina-->
+        <footer>
+            <img src="../static/img/logo-blanco.png" alt="Logo Barberia Alura">
+            <p class="copyright"> &copy Copyright Barberia Alura - 2023</p>
+        </footer>
+    </body>
+
+</html>

@@ -1,0 +1,130 @@
+header{
+    background-color:#BBBBBB;
+    /* *Propiedad de espaciamiento externo. Indicamos 20px en sup-inf y 0 para los laterales*/
+    padding: 20px 0;
+}
+.caja{
+    /* *Delimitamos que la etiqueta caja ocupe un ncho de 940px, ya que es el tamaño mas comun de dispositivos */
+    width:940px;
+    /* *Indicamos que los elementos de nuestra caja tengan una posision relativam con  */
+    position: relative;
+    /* *Indicamos que tengan un margen sup-inf de cero, y automatico a los vordes*/
+    margin: 0 auto;
+}
+nav{
+    /* *Indicamos que el elemento nav ocupe todo el ancho de la pantalla */
+    position: absolute;
+    /* *Indicamos que  se desplace hacia arriba 110 pixeles*/
+    top:110px;
+    /* *Indicamos que  se desplace hacia la izquierda 0 pixeles*/
+    right:0;
+}
+nav li{
+    /* *Indicamos a los alementos de nuestra barra de navegacion que el espacio lo ocuoen en una sola linea */
+    display: inline;
+    margin:0 0 0 15px
+}
+nav a{
+    /* *Indicamos que el texto de nuestros enlaces este en mayusculas */
+    text-transform:uppercase;
+    /* *Indicamos que el texto de nuestros enlaces esten en negro */
+    color: #000000;
+    /* *Indicamos que el texto de nuestros enlaces este en negrita */
+    font-weight: bold;
+    /* *Indicamos que el texto de nuestros enlaces tenga un tamaño de 22px */
+    font-size: 22px;
+    /* *Indicamos que el texto de nuestros enlaces no tega la decoracion predeterminada */
+    text-decoration: none;
+}
+nav a:hover{
+    color: #c78c19;
+    text-decoration:underline;
+}
+
+/* TODO Estilos para el fomulario */
+main {
+    width:940px;
+    margin: 0 auto;
+}
+/* *Aplica lo siguiente para todos los elementos dentro de la etiqueta form*/
+form{
+    /* *Aplicaremos un margen de 40px para arriba y para abajo u para los costados 0*/
+    margin: 40px 0;
+}
+/**Aplicamos lo siguiente solo para los elementos "label" contenidos dentro de nuestro label form*/
+form label, form legend{
+    /* !Los elementos de un formulario (label e input) se crean por defecto con un display "inline" (solo ocupan su espacio) */
+    /**Indicamos que el espacio ocupado por cada elemento se distribuya en forma de bloque, por lo que ocupa todo el espacio de la pantalla*/
+    display:block;
+    /**Agregamos un tamaño de fuente mas grande (20px)*/
+    font-size:20px;
+    /**Agregamos un margen sup de 0, derecha de 0 e inferior de 10px */
+    margin: 0 0 10px;
+}
+/**Aplicamos lo siguiente solo para los elementos "input" contenidos dentro de nuestro label form*/
+.input-box{
+
+    display:block;
+    /**Agregamos in margen */
+    margin: 0 0 20px;
+    /**Agregamos un espaciamiento interno sup-inf de 10px y de 25px para los larelaes*/
+    padding:10px 25px;
+    /**Indicamos que cada elemento se utilice el 50% de los 940px que definimos en el main*/
+    width:50%
+}
+.checkbox{
+    margin:20px 0;
+}
+.enviar{
+    /**Ocupa el 40% del total de la pagina */
+    width: 40%;
+    /**Agregamos un espaciamiento interno de 15px en sup-inf*/
+    padding: 15px 0;
+    /**Agregamos una fuente mas grande*/
+    font-size:18px;
+    /**Aplicamos a nuestra fuente negritas*/
+    font-weight:bold;
+    /**Agregamos un color blanco a nuestra fuente*/
+    color:#FFFFFF;
+    /**Agregamos un color naranja de fondo*/
+    background:rgb(173, 81, 5);
+    /**Quitamos los bordes con (none)*/
+    border:none;
+    /**Agregamos un borde redondeado*/
+    border-radius: 5px;
+                            /* !TRANSICIONES CON CSS */
+    /**Agregamos una transicion de 1.5 segundos a todos los elementos*/
+    transition: 1.5s all;
+    /**Agregamos un puntero de mano al pasar el mause*/
+    cursor: pointer;
+}
+.enviar:hover{
+
+    background: orange;
+    /**Agregamos una transicion de 1.5 segundos al background*/
+    transform: scale(1.20) 
+}
+table{
+    margin: 40px 40px;
+}
+thead{
+    background: orange;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+td,th{
+    border: 1px solid #000000;
+    padding:8px 15px;
+}
+footer{
+    text-align: center;
+    background: url(img/bg.jpg);
+    padding: 40px;
+}
+
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin:20px;
+}
